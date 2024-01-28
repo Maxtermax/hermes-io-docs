@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 import { Feather } from "@styled-icons/feather";
 import { BoxToolbox } from "@styled-icons/fluentui-system-regular";
 import { ReactLogo } from "@styled-icons/fa-brands";
+import { Analytics } from '@vercel/analytics/react';
 
 let icons = {
   size: 100,
@@ -90,6 +91,7 @@ export default function HomepageFeatures() {
           ))}
         </div>
       </div>
+      <Analytics />
     </section>
   );
 }
