@@ -28,3 +28,33 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+main .features_src-components-HomepageFeatures-styles-module {
+  padding-bottom: 3rem;
+}
+
+.hero--primary {
+  background-color: whitesmoke;
+}
+
+.hero__title {
+  display: flex;
+  width: 100%;
+  align-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero__subtitle {
+  max-width: 1000px;
+  margin: 0px auto;
+  color: #02261f;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}

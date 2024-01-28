@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Hermes io',
-  tagline: 'A lightweight javascript library that allows communication between components by using the observer pattern and the hook api.',
+  tagline: 'A lightweight React library that allows communication between components by using the observer pattern and the hook api.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

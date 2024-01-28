@@ -20,6 +20,13 @@ const FeatureList = [
       <>
         This package weight around: 2.9 kB - MINIFIED, 1.3 kB - MINIFIED +
         GZIPPED.
+        <a
+          href="https://bundlephobia.com/package/hermes-io@2.2.37"
+          target="_blank"
+          style={{ marginLeft: 4 }}
+        >
+          Learn more
+        </a>
       </>
     ),
   },
