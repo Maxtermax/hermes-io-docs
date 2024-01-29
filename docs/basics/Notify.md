@@ -63,7 +63,7 @@ useObserver({
 ```
 
 ```javascript
-const handleClick = () => {
+const handleClick = async () => {
   // ping...
   const result = await Observer.notify({
     context: Context,
