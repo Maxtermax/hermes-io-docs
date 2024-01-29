@@ -13,6 +13,8 @@ sidebar_position: 4
 
 
 ```javascript
+import { useObserver } from 'hermes-io';
+
 // ./src/Counter.jsx
 export function Counter() {
   const [count, setCount] = useState(0);
