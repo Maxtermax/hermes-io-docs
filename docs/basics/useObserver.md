@@ -5,11 +5,15 @@ sidebar_position: 4
 # useObserver
 `hermes-io` provides a `react custom hook` to integrate `Observer` with `Context`, this hook can be used to subscribe listeners and receive `notifications` under cetains contrains provided by the `notification context`, let's analize this in detail.
 
+### Parameter 
+
 | key      | value             | required | description                                                                                                                                                     |
 |----------|-------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | observer | Observer instance | true     | An instance of the class Observer                                                                                                                               |
 | listener | Function          | true     | A standar javascript function                                                                                                                                   |
 | contexts | Context[]    | true     | An array of instances of the class Context, when a notification comes and is not signed with any of the contexts in the array the listener never will be called |
+
+### Example
 
 
 ```javascript

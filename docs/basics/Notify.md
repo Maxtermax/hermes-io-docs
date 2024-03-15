@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Notify
+# notify
 
 Method that sends notifications to the `subscribers` of a specific `observer` signed with a `context` that way we create a `notification context`, let's see this in details:
 

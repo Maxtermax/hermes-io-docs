@@ -19,10 +19,10 @@ const FeatureList = [
     Svg: () => <Feather {...icons} />,
     description: (
       <>
-        This package weight around: 2.9 kB - MINIFIED, 1.3 kB - MINIFIED +
+        This package weight around: 5.6 kb - MINIFIED, 2.2 kB - MINIFIED +
         GZIPPED.
         <a
-          href="https://bundlephobia.com/package/hermes-io@2.2.37"
+          href="https://bundlephobia.com/package/hermes-io@2.4.45"
           target="_blank"
           style={{ marginLeft: 4 }}
         >
