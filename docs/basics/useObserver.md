@@ -11,7 +11,7 @@ sidebar_position: 4
 |----------|-------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | observer | Observer instance | true     | An instance of the class Observer                                                                                                                               |
 | listener | Function          | true     | A standar javascript function                                                                                                                                   |
-| contexts | Context[]    | true     | An array of instances of the class Context, when a notification comes and is not signed with any of the contexts in the array the listener never will be called |
+| contexts | context[]    | true     | An array of instances of the class Context, when a notification comes and is not signed with any of the contexts in the array the listener never will be called |
 
 ### Example
 

@@ -80,4 +80,5 @@ const handleClick = async () => {
 ## Examples
 
 - [Counter](https://stackblitz.com/~/github.com/Maxtermax/hermes-io-counter-demo)
+- [File explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
 - [Sneaker store](https://sneaker-store-1.vercel.app)
