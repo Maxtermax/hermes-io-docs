@@ -9,7 +9,7 @@ Method that sends notifications to the `subscribers` of a specific `observer` si
 | key     | value                    | required | description      |
 | ------- | ------------------------ | -------- | ---------------- |
 | value   | any                      | true     | payload          |
-| context | new Context('MyContext') | true     | context instance |
+| context | Context instance         | true     | Context instance |
 
 ```javascript
 // ./src/App.jsx
