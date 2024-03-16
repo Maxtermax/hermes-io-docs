@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # mutate
 
-`useStore` provides a `mutate` method meant to modify the data, once the method is called the `reducer` will performed the corresponding mutation base on the `type` and all the store's subscribers will be notified about the mutation, let's explore this by following the demo: [file explorer demo](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
+`useStore` provides a `mutate` method meant to modify the data, once the method is called the `reducer` will performed the corresponding mutation base on the `type` and all the store's subscribers will be notified about the mutation, let's explore this by following the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
 ### Parameter
 
 | key     | value                | required | description                                            |

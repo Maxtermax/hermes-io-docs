@@ -3,18 +3,15 @@ sidebar_position: 5
 ---
 
 # useStore 
-`hermes-io` provides a hook to manage the component's state, oriented to a smart data propagation and updates throughout the use of `mutations` and  `queries`, let's explore this by following the demo: [file explorer demo](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
+`hermes-io` provides a hook to manage the component's state, oriented to a smart data propagation and updates throughout the use of `mutations` and  `queries`, let's explore this by following the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
 
 ### Parameter 
-
-| key     | value          | required | description                                                                                                                               |
-|---------|----------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| store   | new Store | reducer | Function       | true     | Pure functions that receive the state and the action to be performed and return a new state, without directly modifying the current state |
-| data    | Object         | true     | Initial state object                                                                                                                      |
-
+| key   | value          | description    |
+|-------|----------------|----------------|
+| store | Store instance | Store instance |
+| data  | object         | Initial state  |
 
 ### Example
-
 
 ```javascript
 import explorer from "@/store/explorer";
@@ -33,7 +30,7 @@ To create a store that manage the state of your application `hermes-io` provides
 ### Parameter 
 | key      | value             | required | description                    |
 |----------|-------------------|----------|--------------------------------|
-| context  | Context instance  | true     | Notification context instance  |
+| context  | Context instance  | true     | Context instance               |
 | observer | Observer instance | true     | Subscribable observer instance |
 
 ### Example

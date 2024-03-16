@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # query
 
-`useStore` provides a `query` method meant to retrieve specifics chunks of data from the store, let's explore this by following the demo: [file explorer demo](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
+`useStore` provides a `query` method meant to retrieve specifics chunks of data from the store, let's explore this by following the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
 
 ### Parameter
 
