@@ -66,7 +66,9 @@ Pro tip: You can have a two way communication bridge by invoking resolver inside
 
 ### reducer
 
-Pure functions that receive the state and the action to be performed and return a new state, without directly modifying the current state
+Pure functions that receive the state and the action to be performed and return a new state, without directly modifying the current state.
+
+### Example 
 
 ```javascript
 export default function reducer(state, action) {

@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 
 # useStore 
-`hermes-io` provides a hook to manage the component's state, oriented to a smart data propagation and updates throughout the use of `mutations` and  `queries`, let's explore this by following the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
+`hermes-io` provides a hook to manage the component's state, oriented to a smart data propagation and updates by using `mutations` and  `queries`, let's explore this by following the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
 
 ### Parameter 
 | key   | value          | description    |
@@ -39,8 +39,13 @@ To create a store that manage the state of your application `hermes-io` provides
 export const explorer = new Store({ context, observer });
 ```
 
+### useStore vs useObserver
+`useObserver` is a communication mecanishm to send information from one place to another whatever you do with that information whether it's a http request or trigger a re-render or any other bussiness logic is up to you, in the other hand `useStore` is meant to orchestrate partially or globally the data of you application and syncronize the store with the state of you app, you can have a store for the entire app (global store) or for a specific section of you app (contained store) in both cases i encourage you to always move the re-renders to closest to where is explicitly required that way you app will be better optimization check the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
 
+![File explorer demo](/img/file-explorer.gif "File explorer")
 
+### Conclusion 
+If you need a communication mechanism to manage business logic use `useObserver` and if you need a `store` and granually re-render components then use `useStore` alongside `useMutations`
 
 
 

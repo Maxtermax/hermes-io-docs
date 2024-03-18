@@ -8,9 +8,10 @@ sidebar_position: 8
 
 ### Parameter
 
-| value    | required | description                                        |
-| -------- | -------- | -------------------------------------------------- |
-| Function | true     | Function that retrieves chunks data from the store |
+| value         | required | description                                                       |
+| ------------- | -------- | ----------------------------------------------------------------- |
+| Function      | true     | Function that retrieves chunks data from the store                |
+| defaultValue  | false    | If the query value is undefined then the defaultValue is returned |
 
 ### Example
 
@@ -18,7 +19,7 @@ sidebar_position: 8
 const { query } = useStore({
   /* ... */
 });
-const name = query((store) => store.state.name);
+const name = query((store) => store.state.name, 'John doe');
 console.log({ name });
 ```
 
@@ -29,5 +30,16 @@ Pro tip: After the useStore is initialized the mutate method can be accessed fro
 ```javascript
 import explorer from "@/store/explorer";
 const name = explorer.query((store) => store.state.name);
+```
+:::
+
+:::tip
+Pro tip: You can combine the [get](https://lodash.com/docs/4.17.15#get) method to gets the value at path of object.
+
+```javascript
+import explorer from "@/store/explorer";
+import get from "lodash/get";
+
+const prop = explorer.query(() => get(store.state, 'my.deep.propery', 'hello'));
 ```
 :::

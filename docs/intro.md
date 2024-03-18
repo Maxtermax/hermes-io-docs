@@ -9,7 +9,7 @@ A lightweight javascript library that allows communication between components by
 
 ## Features
 
-- 🏎️ Lightweight 2.9 kB - MINIFIED, 1.3 kB - MINIFIED + GZIPPED
+- 🏎️ Lightweight 5.6 kB - MINIFIED, 2.2 kB - MINIFIED + GZIPPED
 - 🧠 Fine grained updates oriented
 - 🛠️ Tooling: chrome extension + CLI
 
