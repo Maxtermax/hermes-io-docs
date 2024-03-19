@@ -1,10 +1,10 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 # query
 
-`useStore` provides a `query` method meant to retrieve specifics chunks of data from the store, let's explore this by following the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
+`useStore` returns a `query` method meant to retrieve specifics chunks of data from the store, let's explore this by following the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
 
 ### Parameter
 
@@ -34,12 +34,12 @@ const name = explorer.query((store) => store.state.name);
 :::
 
 :::tip
-Pro tip: You can combine the [get](https://lodash.com/docs/4.17.15#get) method to gets the value at path of object.
+Pro tip: You can combine the [get](https://lodash.com/docs/4.17.15#get) method of lodash with the query to get a value from the state.
 
 ```javascript
 import explorer from "@/store/explorer";
 import get from "lodash/get";
 
-const prop = explorer.query(() => get(store.state, 'my.deep.propery', 'hello'));
+const prop = explorer.query(() => get(store.state, 'my.deep.prop', 'hello'));
 ```
 :::

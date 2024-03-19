@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 11
 ---
 
 # useMutations
@@ -15,6 +15,10 @@ sidebar_position: 7
 | store    | store instance   | true     | Store instance                                                                                                                       |
 | id       | string or number | true     | Unique identifier, string or number that should match with [targets](/docs/basics/mutate) (if passed) parameter in the mutate method |
 | noUpdate | boolean          | false    | Boolean parameter, that indicates whether re-render once the onChange is invoked or not.                                             |
+
+:::warning
+Important: By default `useMutation` triggers a re-render on event changes after invoking the `onChange` callback unless the `noUpdate` is set to `false`
+:::
 
 ### Example
 

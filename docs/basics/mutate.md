@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 10
 ---
 
 # mutate
@@ -9,7 +9,7 @@ sidebar_position: 6
 
 | key     | value                | required | description                                            |
 | ------- | -------------------- | -------- | ------------------------------------------------------ |
-| type    | string               | true     | Mutation type                                          |
+| type    | string               | true     | Event type                                          |
 | targets | string[] or number[] | false    | List of subscribers to be notified on states mutations |
 | payload | object               | true     | Mutation payload                                       |
 
