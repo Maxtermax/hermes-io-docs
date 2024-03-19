@@ -26,6 +26,28 @@ export default function App() {
 }
 ```
 
+### reducer
+
+Pure functions that receive the state and the action to be performed and return a new state, without directly modifying the current state.
+
+### Example 
+
+```javascript
+export default function reducer(state, action) {
+  const actions = {
+    [CONSTANTS.SET_FILE_STATE]: () =>
+      map(
+        state,
+        ({ type, id }) =>
+          type === CONSTANTS.DIRECTORY_TYPE.FILE && id === action.payload.id,
+        { hightlight: action.payload.value }
+      ),
+  };
+  return actions[action.type]?.();
+}
+```
+
+
 ## Store
 
 To create a store that manage the state of your application `hermes-io` provides a `Store class` meant to hold, `mutate` and `query` information, combined with the [context](/docs/basics/Context) and [observer](/docs/basics/Observer) pattern to ensure reactivity on data changes along side with the `useStore` hook.
