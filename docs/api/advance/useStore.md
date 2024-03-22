@@ -73,7 +73,7 @@ export const explorer = new Store({ context, observer });
 Pro tip: Move the re-renders to closest to where is explicitly required that way you app will be better optimized you can use an architecture oriented to fine grained updates as an alternative to `memo` check the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer) 
 :::
 
-<iframe width="100%" height="800px" src="https://stackblitz.com/~/github.com/Maxtermax/file-explorer" />
+<img width="350px" src="/img/file-explorer.gif"/>
 
 
 ### Conclusion
