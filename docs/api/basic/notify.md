@@ -74,8 +74,7 @@ const handleClick = async () => {
 }
 ```
 :::
-
-<iframe width="100%" height="800px" src="//https://google.com/" />
+Demo: [here](https://stackblitz.com/~/github.com/Maxtermax/hermes-io-counter-demo)
 
 ## Examples
 
