@@ -50,7 +50,7 @@ export default function reducer(state, action) {
 
 ## Store
 
-To create a store that manage the state of your application `hermes-io` provides a `Store class` meant to hold, `mutate` and `query` information, combined with the [context](/docs/basics/Context) and [observer](/docs/basics/Observer) pattern to ensure reactivity on data changes along side with the `useStore` hook.
+`hermes-io` provides a `Store` class meant to hold, `mutate` and `query` information, combined with the [context](/docs/api/basic/Context) and [observer](/docs/api/basic/Observer) pattern to ensure reactivity on data changes alongside with the `useStore` hook.
 
 ### Parameter
 
@@ -71,9 +71,9 @@ export const explorer = new Store({ context, observer });
 
 :::tip
 Pro tip: Move the re-renders to closest to where is explicitly required that way you app will be better optimized you can use an architecture oriented to fine grained updates as an alternative to `memo` check the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer) 
-
-<img width="400px" height="auto" src="/img/file-explorer.gif" alt="File explorer demo"/>
 :::
+
+<iframe width="100%" height="800px" src="https://stackblitz.com/~/github.com/Maxtermax/file-explorer" />
 
 
 ### Conclusion

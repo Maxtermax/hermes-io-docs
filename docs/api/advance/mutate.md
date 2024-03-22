@@ -36,7 +36,7 @@ const handleClick = () => {
 ```
 
 :::tip
-Pro tip: After the useStore is initialized the mutate method can be accessed from the store's [instance](/docs/basics/useStore#store)
+Pro tip: After the useStore is initialized the mutate method can be accessed from the store's [instance](/docs/api/useStore#store)
 
 ```javascript
 import explorer from "@/store/explorer";

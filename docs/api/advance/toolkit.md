@@ -4,15 +4,8 @@ sidebar_position: 12
 
 # Toolkit
 
-## Hermes-io CLI
-This CLI is the official scaffolding generator for [hermes-io](https://www.npmjs.com/package/hermes-io#get-started), its generates a simple folder structure that guaranty separation of concerns encompassing pivotal elements such as: [contexts](https://github.com/Maxtermax/hermes-io#context), [hooks](https://github.com/Maxtermax/hermes-io#useobserver-hook) and [observers](https://github.com/Maxtermax/hermes-io#observer).
-
-```
-npm i hermes-io-cli -g
-```
-
-## Overview
-This CLI is the official scaffolding generator for [hermes-io](https://www.npmjs.com/package/hermes-io#get-started), its generates a simple folder structure that guaranty separation of concerns encompassing pivotal elements such as: [contexts](https://github.com/Maxtermax/hermes-io#context), [hooks](https://github.com/Maxtermax/hermes-io#useobserver-hook) and [observers](https://github.com/Maxtermax/hermes-io#observer).
+## CLI
+This CLI is the official scaffolding generator for [hermes-io](https://www.npmjs.com/package/hermes-io), its generates a simple folder structure that guaranty separation of concerns encompassing pivotal elements such as: [Context](/docs/api/basic/Context), [useObserver](/docs/api/basic/useObserver) and [Observer](/docs/api/basic/Observer).
 
 # Summary
 - [Installation](#installation)
@@ -68,7 +61,7 @@ result:
 /observers/MyObserver.js
 ```
 
-###  Use observer
+### useObserver
 
 By passing the **hook** argument a newly created folder named as '**hooks**' is automatically generated. Within this folder, a brand-new  [observer hook](https://github.com/Maxtermax/hermes-io#useobserver-hook) file is generated, adopting the provided value as its designated name:
 ```
@@ -126,7 +119,7 @@ export const UseCustom = () => {
 }
 ```
 
-###  Root folder
+###  Root 
 By default the folders are generated using the current path as a base (typically at the root of the project), this can be changed by using the root argument:
 ```
 hermes-io-cli --root="./output" --context="MyContext" --observer="MyObserver"
@@ -139,8 +132,9 @@ result:
 /output/observers/MyObserver.js
 ```
 
+## Chrome extension 
+Chrome extension that allows inspect notifications emitted by [hermes-io](https://www.npmjs.com/package/hermes-io) in a friendly UI 
 
-## Hermes-io Inspector 🔍
-Chrome extension that allows inspect notifications emitted by [hermes-io](https://www.npmjs.com/package/hermes-io) in a friendly UI [demo](https://github.com/Maxtermax/hermes-io-devtools/assets/4247989/5e7dcaa5-cb0d-4a00-a685-4f65884a071c)
+<video width="100%" height="auto" controls src="https://github.com/Maxtermax/hermes-io-devtools/assets/4247989/5e7dcaa5-cb0d-4a00-a685-4f65884a071c" />
 
 Install extension: [here](https://chromewebstore.google.com/detail/hermes-io/pjdkgcpikfmkncldipldmimanfkpeedm?hl=en)

@@ -19,12 +19,12 @@ sidebar_position: 9
 const { query } = useStore({
   /* ... */
 });
-const name = query((store) => store.state.name, 'John doe');
-console.log({ name });
+const name = query((store) => store.state.name, 'John doe'); 
+console.log(name);//John doe 
 ```
 
 :::tip
-Pro tip: After the useStore is initialized the mutate method can be accessed from the store's [instance](/docs/basics/useStore#store)
+Pro tip: After the useStore is initialized the mutate method can be accessed from the store's [instance](/docs/api/useStore#store)
 
 
 ```javascript

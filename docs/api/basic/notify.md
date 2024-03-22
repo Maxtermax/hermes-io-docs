@@ -4,11 +4,11 @@ sidebar_position: 5
 
 # notify
 
-Method that sends notifications to the `subscribers` of a specific `observer` signed with a `context` that way we create a `notification context`, let's see this in details:
+Method to send notifications to the `subscribers` of a specific `Observer` signed with a `Context` that way we create a `notification context`, let's see this in details:
 
 | key     | value                    | required | description      |
 | ------- | ------------------------ | -------- | ---------------- |
-| value   | any                      | true     | payload          |
+| value   | any                      | true     | Payload          |
 | context | Context instance         | true     | Context instance |
 
 ```javascript
@@ -75,7 +75,7 @@ const handleClick = async () => {
 ```
 :::
 
-[Play demo](https://stackblitz.com/~/github.com/Maxtermax/hermes-io-counter-demo) <svg viewBox="0 0 8 8" width="12" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-sc-ea9ulj-0 kvMjKH"><path d="M0 0v8h8V6H7v1H1V1h1V0H0zm4 0 1.5 1.5L3 4l1 1 2.5-2.5L8 4V0H4z"></path></svg>
+<iframe width="100%" height="800px"  src="https://stackblitz.com/~/github.com/Maxtermax/hermes-io-counter-demo" />
 
 ## Examples
 
