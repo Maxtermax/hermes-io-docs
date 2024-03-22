@@ -24,17 +24,18 @@ npm i hermes-io --save
 Node.js version 18.0 or above (which can be checked by running node -v). You can use nvm for managing multiple Node versions on a single machine installed.
 
 
-## Summary
+## API 
+### Basic 
+- [Observer](/docs/api/basic/Observer)
+- [Context](/docs/api/basic/Context)
+- [useObserver](/docs/api/basic/useObserver)
+- [notify](/docs/api/basic/notify)
+- [withNotify](/docs/api/basic/withNotify)
+- [useStore](/docs/api/advance/useStore)
 
-- [Installation](/docs/basics/Installation)
-- [Observer](/docs/basics/Observer)
-- [Context](/docs/basics/Context)
-- [useObserver](/docs/basics/useObserver)
-- [notify](/docs/basics/Notify)
-- [withNotify](/docs/basics/withNotify)
-- [useStore](/docs/basics/useStore)
-- [query](/docs/basics/query)
-- [mutate](/docs/basics/mutate)
-- [useMutations](/docs/basics/useMutations)
-- [Toolkit](/docs/basics/Toolkit)
-- [Examples](/docs/basics/Notify#examples)
+### Advance
+- [query](/docs/api/advance/query)
+- [mutate](/docs/api/advance/mutate)
+- [useMutations](/docs/api/advance/useMutations)
+- [toolkit](/docs/api/advance/toolkit)
+- [examples](/docs/api/basic/notify#examples)
