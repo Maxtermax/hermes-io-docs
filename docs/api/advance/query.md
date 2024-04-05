@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # query
 
-`useStore` returns a `query` method meant to retrieve specifics chunks of data from the store, let's explore this by following the demo: [file explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
+`useStore` returns a `query` method meant to retrieve specifics chunks of data from the store, let's explore this by following the demo: [file explorer](https://stackblitz.com/edit/vitejs-vite-juuupt?file=README.md)
 
 ### Parameter
 

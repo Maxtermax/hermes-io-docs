@@ -81,8 +81,7 @@ function App() {
   );
 }
 ```
-
-![unoptimized](https://raw.githubusercontent.com/Maxtermax/hermes-io-counter-demo/master/src/assets/unoptimized.gif)
+![unoptimized](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*JdC40HJ0BVSAqDWJQzH3pA.gif)
 
 an alternative could be move the state inside `Counter` and manage it on events changes:
 
@@ -107,5 +106,4 @@ export function Counter() {
 }
 
 ```
-![optimized](https://raw.githubusercontent.com/Maxtermax/hermes-io-counter-demo/master/src/assets/optimized.gif)
-
+![optimized](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*VhOkr1735qdrHHyuJszqvQ.gif)

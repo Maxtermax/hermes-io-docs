@@ -48,7 +48,7 @@ function App() {
 
 :::tip
 
-Pro tip: You can have a ping pong notification by invoking resolver inside the listener.
+Pro tip: You can create a two way bidirectional bridge by invoking resolver inside the listener.
 
 ```javascript
 const handleNotification = (event, resolver) => {
@@ -74,10 +74,3 @@ const handleClick = async () => {
 }
 ```
 :::
-Demo: [here](https://stackblitz.com/~/github.com/Maxtermax/hermes-io-counter-demo)
-
-## Examples
-
-- [Counter](https://stackblitz.com/~/github.com/Maxtermax/hermes-io-counter-demo)
-- [File explorer](https://stackblitz.com/~/github.com/Maxtermax/file-explorer)
-- [Sneaker store](https://sneaker-store-1.vercel.app)
