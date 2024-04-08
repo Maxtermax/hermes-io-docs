@@ -2,7 +2,7 @@
 sidebar_position: 12
 ---
 
-Let's leverage the store and observer concepts to build a optimized file explorer application:
+Let's leverage the store and observer concepts to build an optimized file explorer application:
 <iframe 
   width="1000px"
   height="600px"
