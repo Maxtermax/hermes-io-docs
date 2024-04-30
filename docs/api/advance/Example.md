@@ -2,9 +2,13 @@
 sidebar_position: 12
 ---
 
-Let's leverage the store and observer concepts to build an optimized file explorer application:
+Let's see the power of an smart update approach with the following demo, navigate the repo below and notice that there is a red flash animation indicating that there is a re-render only in the desired components.
+
 <iframe 
-  width="1000px"
-  height="600px"
-  src="https://stackblitz.com/edit/vitejs-vite-juuupt?embed=1&file=src%2FApp.jsx"
+  width="1090px"
+  height="700px"
+  src="https://file-explorer-mauve.vercel.app/"
+  class="advance-container"
+  id="advance-demo"
 />
+

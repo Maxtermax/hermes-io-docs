@@ -58,3 +58,7 @@ main .features_src-components-HomepageFeatures-styles-module {
   flex-direction: column;
   gap: 25px;
 }
+.advance-container {
+  border: 1px solid silver;
+  border-radius: 10px;
+}
