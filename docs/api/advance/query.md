@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # query
 
-`useStore` returns a `query` method meant to retrieve specifics chunks of data from the store, let's explore this by following the demo: [file explorer](https://stackblitz.com/edit/vitejs-vite-juuupt?file=README.md)
+Method meant to retrieve specifics chunks of data from the store, let's explore this by following the demo: [file-explorer](/docs/api/advance/Example#queries)
 
 ### Parameter
 
@@ -24,7 +24,7 @@ console.log(name);//John doe
 ```
 
 :::tip
-Pro tip: After the useStore is initialized the mutate method can be accessed from the store's [instance](/docs/api/useStore#store)
+Pro tip: After the useStore is initialized the mutate method can be accessed through the [store](/docs/api/advance/useStore#store)
 
 
 ```javascript

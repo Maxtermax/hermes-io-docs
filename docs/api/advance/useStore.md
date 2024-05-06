@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # useStore
 
-`hermes-io` provides a hook to manage the component state, oriented to a smart data propagation and updates by using `mutations` and `queries`, let's explore this by following the demo: [file explorer](https://stackblitz.com/edit/vitejs-vite-juuupt?file=README.md)
+React custom hook meant to manage the component's state by using `mutations` and `queries`, let's explore this by following the demo: [file explorer](/docs/api/advance/Example)
 
 ### Parameter
 

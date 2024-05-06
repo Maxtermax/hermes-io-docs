@@ -4,7 +4,8 @@ sidebar_position: 10
 
 # mutate
 
-`useStore` provides a `mutate` method meant to modify the data, once the method is called the `reducer` will performed the corresponding mutation base on the `type` and all the store's subscribers will be notified about the mutation, let's explore this by following the demo: [file explorer](https://stackblitz.com/edit/vitejs-vite-juuupt?file=README.md)
+Method meant to modify the store's data, when the method is called the `reducer` will perform the corresponding mutation base on the `type` and all the store's subscribers will be notified, let's explore this by following the demo: [file explorer](/docs/api/advance/Example#mutations)
+
 ### Parameter
 
 | key     | value                | required | description                                            |
@@ -36,7 +37,7 @@ const handleClick = () => {
 ```
 
 :::tip
-Pro tip: After the useStore is initialized the mutate method can be accessed from the store's [instance](/docs/api/useStore#store)
+Pro tip: After the useStore is initialized the mutate method can be accessed through the [store](/docs/api/advance/useStore#store)
 
 ```javascript
 import explorer from "@/store/explorer";
@@ -44,20 +45,3 @@ explorer.mutate(/*...*/);
 ```
 :::
 
-:::tip
-Pro tip: You can have a two way communication bridge by invoking resolver inside the onChange callback.
-
-```javascript
-  const result = await mutate({/*...*/});
-```
-
-```javascript
- useMutations({
-    noUpdate: true,
-    onChange: (value, resolver) => someAsynchronousOperation(value).then(resolver)
-    events: [CONSTANTS.SET_FOLDER_STATE],
-    store: explorer,
-    id, 
- })
-```
-:::
