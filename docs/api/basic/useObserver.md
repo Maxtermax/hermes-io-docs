@@ -37,13 +37,13 @@ export function Counter() {
 ```
 
 ### generate hook (optional)
-To simply things you can generate the observer file using [hermes-io-cli](https://www.npmjs.com/package/hermes-io-cli#use-observer)
+To simply things you can generate a custom hook by using [hermes-io-cli](https://www.npmjs.com/package/hermes-io-cli#use-observer)
 ```
 hermes-io-cli --root="./src" --hook="useCounter"
 ```
 
 ## Fine grained updates
-`hermes-io` allows smart and details updates by taking the responsibility of component communication, using an observable architecture this is an interesting alternative to: `prop drilling`, `Flux Pattern`, `useContext`.
+`hermes-io` allows smart and details updates by taking the responsibility of components communications, an observable architecture like this is an interesting alternative to: `prop drilling`, `Redux`, `useContext`.
 
 Let's explore this concept by the following example:
 
@@ -57,7 +57,7 @@ function RenderTracker() {
 }
 ```
 
-In the following structure when the parent re-renders all the children will re-render as well, if this behaviour is not the desired typically react provides techniques like [memo](https://react.dev/reference/react/memo) to avoid it, let's explore other way to achieve the same result:
+In the following structure when the parent re-renders all the children will re-render as well, if this behaviour is not the desired typically react provides techniques like [memo](https://react.dev/reference/react/memo) let's explore other way to achieve the same result:
 
 ```javascript
 // ./src/App.jsx
@@ -83,7 +83,7 @@ function App() {
 ```
 ![unoptimized](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*JdC40HJ0BVSAqDWJQzH3pA.gif)
 
-an alternative could be move the state inside `Counter` and manage it on events changes:
+let's move the state inside `Counter` and manage it on events changes:
 
 ```javascript
 // ./src/Counter.jsx

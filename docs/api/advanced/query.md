@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # query
 
-Method meant to retrieve specifics chunks of data from the store, let's explore this by following the demo: [file-explorer](/docs/api/advance/Example#queries)
+Method meant to retrieve specifics chunks of data from the store, let's explore this by following the demo: [file-explorer](/docs/api/advanced/Example#queries)
 
 ### Parameter
 
@@ -24,7 +24,7 @@ console.log(name);//John doe
 ```
 
 :::tip
-Pro tip: After the useStore is initialized the mutate method can be accessed through the [store](/docs/api/advance/useStore#store)
+Pro tip: After the useStore is initialized the mutate method can be accessed through the [store](/docs/api/advanced/useStore#store)
 
 
 ```javascript

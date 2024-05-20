@@ -3,7 +3,7 @@ sidebar_position: 12
 hide_table_of_contents: true
 ---
 
-Let's see the power of a smart update approach navigate the repo below and notice the red flash animation indicating that there was a re-render only in the desired components.
+Let's see the power of `hermes-io`, navigate the app below and notice the red flash animation indicating that there was a re-render only in the designated components.
 
 <iframe 
   width="1000px"
@@ -15,7 +15,7 @@ Let's see the power of a smart update approach navigate the repo below and notic
 
 ### store
 
-Let's begin by generating an instance of the Store class and pass the required arguments.
+Let's generate an instance of the Store class.
 
 <iframe 
   width="1000px"
@@ -39,7 +39,7 @@ Then populate the store by passing the `data` argument to `useStore`.
 
 ### reducer 
 
-When a mutation is sent the reducer will perform an action that changes the data in the store.
+When a mutation is performed the `reducer` will trigger an action that changes the data in the store.
 
 <iframe 
   width="1000px"
@@ -50,7 +50,7 @@ When a mutation is sent the reducer will perform an action that changes the data
 />
 
 ### mutations 
-In this file lives all possibles mutations, let take at look to the `setFileHightLight` it will mutate the store to highlight the files names on the text field changes.
+In this file lives all possibles mutations, take at look to the `setFileHightLight` it will mutate the store to highlight the files names on the text field changes.
 
 
 <iframe 

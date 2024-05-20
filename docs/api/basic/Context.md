@@ -17,7 +17,7 @@ The context constrains the observer by telling which `notifications` must listen
 This concept has nothing to do with the `react context api`.
 :::
 
-To simply things you can generate the observer file using [hermes-io-cli](https://www.npmjs.com/package/hermes-io-cli#context)
+To simply things you can generate the context by using [hermes-io-cli](https://www.npmjs.com/package/hermes-io-cli#context)
 ```
 hermes-io-cli --root="./src" --context="CounterContext"
 ```

@@ -28,9 +28,10 @@ npm i hermes-io --save
 - [withNotify](/docs/api/basic/withNotify)
 - [Example](/docs/api/basic/example)
 
-### Advance
-- [query](/docs/api/advance/query)
-- [mutate](/docs/api/advance/mutate)
-- [useMutations](/docs/api/advance/useMutations)
-- [Example](/docs/api/advance/example)
-- [Toolkit](/docs/api/advance/toolkit)
+### Advanced
+- [query](/docs/api/advanced/query)
+- [mutate](/docs/api/advanced/mutate)
+- [useStore](/docs/api/advance/useStore)
+- [useMutations](/docs/api/advanced/useMutations)
+- [Example](/docs/api/advanced/example)
+- [Toolkit](/docs/api/advanced/toolkit)

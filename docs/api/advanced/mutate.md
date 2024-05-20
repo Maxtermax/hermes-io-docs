@@ -4,7 +4,7 @@ sidebar_position: 10
 
 # mutate
 
-Method meant to modify the store's data, when the method is called the `reducer` will perform the corresponding mutation base on the `type` and all the store's subscribers will be notified, let's explore this by following the demo: [file explorer](/docs/api/advance/Example#mutations)
+Method meant to modify the store's data, when the method is called the `reducer` will perform the corresponding mutation base on the `type` and all the store's subscribers will be notified, let's explore this by following the demo: [file explorer](/docs/api/advanced/Example#mutations)
 
 ### Parameter
 
@@ -37,7 +37,7 @@ const handleClick = () => {
 ```
 
 :::tip
-Pro tip: After the useStore is initialized the mutate method can be accessed through the [store](/docs/api/advance/useStore#store)
+Pro tip: After the useStore is initialized the mutate method can be accessed through the [store](/docs/api/advanced/useStore#store)
 
 ```javascript
 import explorer from "@/store/explorer";

@@ -4,13 +4,13 @@ sidebar_position: 8
 
 # useStore
 
-React custom hook meant to manage the component's state by using `mutations` and `queries`, let's explore this by following the demo: [file explorer](/docs/api/advance/Example)
+`hermes-io` provides a custom hook meant to manage the components state by using `mutations` and `queries`, let's explore this by following the demo: [file explorer](/docs/api/advanced/Example)
 
 ### Parameter
 
 | key   | value          | description    |
 | ----- | -------------- | -------------- |
-| store | Store instance | Store instance |
+| store | Store instance | [Store instance](/docs/api/advanced/useStore#store) |
 | data  | object         | Initial state  |
 
 ### Example
@@ -74,4 +74,4 @@ Pro tip: Move the re-renders to closest to where is explicitly required that way
 :::
 
 ### Conclusion
-If you need a communication mechanism to manage business logic use `useObserver` and if you need a `store` and granually re-render components then use `useStore` alongside with `useMutations` 
+If you need a communication mechanism to manage business logic use `useObserver` and if you need a `store` and granually re-renders then use `useStore` alongside with `useMutations` 
