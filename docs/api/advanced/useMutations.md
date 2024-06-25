@@ -28,7 +28,7 @@ import { useMutations } from "hermes-io";
 import store from "store/app";
 import { CONSTANTS } from "constants";
 
-const Folder = () => {
+const Folder = ({ id }) => {
   const { state } = useMutations({
     initialState: { isExpanded: false },
     events: [CONSTANTS.SET_FOLDER_STATE],
