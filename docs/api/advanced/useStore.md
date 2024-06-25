@@ -4,7 +4,8 @@ sidebar_position: 8
 
 # useStore
 
-`hermes-io` provides a custom hook meant to manage the components state by using `mutations` and `queries`, let's explore this by following the demo: [file explorer](/docs/api/advanced/Example)
+The `useStore` hook is designed to manage your component’s state using `mutations` and `queries`, let's explore the functionality by following the demo: [File explorer](/docs/api/advanced/Example)
+
 
 ### Parameter
 

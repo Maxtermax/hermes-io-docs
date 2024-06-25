@@ -4,13 +4,14 @@ sidebar_position: 11
 
 # useMutations
 
-`hermes-io` provides a custom hook meant to synchronize store changes with the component's state
+The `useMutations` hook is designed to synchronize store changes with your component’s state. Additionally, you can manage local state with `useMutations` by setting an `initialState` and updating the state by returning a new value in the `onChange` function.
 
 ### Parameter
 
 | key      | value            | required | description                                                                                                                          |
 | -------- | ---------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | events   | string[]         | true     | List of events to listen, the events should match with the parameter type in the [mutate](/docs/api/advanced/mutate) method                |
+| initialState   | object   | false     |  Initial state meant to manage you local state optionally   |
 | onChange | function         | true     | Callback called on store mutations                                                                                                |
 | store    | store instance   | true     | [Store instance](/docs/api/advanced/useStore#store)                                                                                                                       |
 | id       | string or number | true     | Unique identifier, string or number that should match with [targets](/docs/api/advanced/mutate) (if passed) parameter in the mutate method |
@@ -25,19 +26,17 @@ Important: By default `useMutation` triggers a re-render on event changes after 
 ```javascript
 import { useMutations } from "hermes-io";
 import store from "store/app";
+import { CONSTANTS } from "constants";
 
 const Folder = () => {
-  const state = useRef(false);
-  const isExpanded = state.current;
-
-  useMutations({
+  const { state } = useMutations({
+    initialState: { isExpanded: false },
     events: [CONSTANTS.SET_FOLDER_STATE],
-    onChange: (value) => (state.current = value),
+    onChange: (value) => ({ isExpanded: value }),
     store,
     id,
   });
-
-  return <FolderIcon isExpanded={isExpanded} />
+  return <FolderIcon isExpanded={state.isExpanded} />
 }
 ```
 
@@ -78,5 +77,3 @@ Pro tip: You override the `noUpdate` value when the `onChange` method is called,
  })
 ```
 :::
-
-

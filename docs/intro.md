@@ -31,7 +31,7 @@ npm i hermes-io --save
 ### Advanced
 - [query](/docs/api/advanced/query)
 - [mutate](/docs/api/advanced/mutate)
-- [useStore](/docs/api/advance/useStore)
+- [useStore](/docs/api/advanced/useStore)
 - [useMutations](/docs/api/advanced/useMutations)
 - [Example](/docs/api/advanced/example)
 - [Toolkit](/docs/api/advanced/toolkit)
