@@ -3,7 +3,7 @@ sidebar_position: 7
 ---
 
 # withNotify
-`hermes-io` provides a HOC to access to the `notify` in a simple way: 
+The `withNotify` HOC allowaccess to the `notify` method in a simple way: 
 
 ### Parameter 
 | key       | type           |  required    | value               | 
