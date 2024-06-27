@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 
 # Context
-The `Context` class designed to create `notification context` instances, only notifications submited on a specific context will be listened otherwise it will be ignored, you can think on this like a `whitelist`. 
+The `Context` class designed to create `notification context` instances, only notifications submitted within a specific context will be listened, others will be ignored, you can think on this as a `whitelist`. 
 
 ```javascript
 import { Context } from "hermes-io";
