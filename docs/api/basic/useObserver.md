@@ -55,10 +55,9 @@ function RenderTracker() {
 }
 ```
 
-In the following structure when the parent re-renders all the children will re-render as well, if this behaviour is not the desired typically react provides techniques like [memo](https://react.dev/reference/react/memo) let's explore other way to achieve the same result:
+In the following structure when the parent re-renders all the children will re-render as well, if this behaviour is not the desired typically react provides techniques like [memo](https://react.dev/reference/react/memo) 
 
 ```javascript
-// ./src/App.jsx
 
 function Counter({ count }) {
   return <h1>Count: {count}</h1>;
@@ -81,10 +80,9 @@ function App() {
 ```
 ![unoptimized](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*JdC40HJ0BVSAqDWJQzH3pA.gif)
 
-moving the state inside `Counter` and handle the incoming notifications:
+let's explore other way to achieve the same result moving the state inside `Counter` and handle the business logic within the incoming notifications:
 
 ```javascript
-// ./src/Counter.jsx
 export function Counter() {
   const [count, setCount] = useState(0);
   const handleCounterNotification = (event) => {
