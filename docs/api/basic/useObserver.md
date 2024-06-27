@@ -3,7 +3,7 @@ sidebar_position: 4
 ---
 
 # useObserver
-`hermes-io` provides a `custom hook` to integrate the `Observer` with `Context`, this hook can be used to subscribe listeners and receive `notifications` under certain constraints provided by the `notification context`, let's analize this in detail.
+The `useObserver` hook integrates the `Observer` and `Context`, this can be used to subscribe listeners and receive `notifications` under certain constraints provided by the `notification context`.
 
 ### Parameter 
 
@@ -11,15 +11,13 @@ sidebar_position: 4
 |----------|-------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | observer | Observer instance | true     | Instance of the class Observer                                                                                                                               |
 | listener | Function          | true     | Callback function                                                                                                                                   |
-| contexts | context[]    | true     | Array of instances of the class Context, when a notification comes and is not signed with any of the contexts in the array the listener callback will never be called |
+| contexts | context[]    | true     | An array of Context class instances. If a notification arrives that is not associated with any of the contexts in the array, the listener callback will not be triggered. |
 
 ### Example
-
 
 ```javascript
 import { useObserver } from 'hermes-io';
 
-// ./src/Counter.jsx
 export function Counter() {
   const [count, setCount] = useState(0);
   const handleCounterNotification = (event) => {
@@ -83,7 +81,7 @@ function App() {
 ```
 ![unoptimized](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*JdC40HJ0BVSAqDWJQzH3pA.gif)
 
-let's move the state inside `Counter` and manage it on events changes:
+moving the state inside `Counter` and handle the incoming notifications:
 
 ```javascript
 // ./src/Counter.jsx
