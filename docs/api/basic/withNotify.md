@@ -3,7 +3,7 @@ sidebar_position: 7
 ---
 
 # withNotify
-The `withNotify` HOC allowaccess to the `notify` method in a simple way: 
+The `withNotify` HOC allows access to the `notify` method in a simple way: 
 
 ### Parameter 
 | key       | type           |  required    | value               | 
