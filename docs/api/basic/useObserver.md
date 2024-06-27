@@ -80,7 +80,7 @@ function App() {
 ```
 ![unoptimized](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*JdC40HJ0BVSAqDWJQzH3pA.gif)
 
-let's explore other way to achieve the same result moving the state inside `Counter` and handle the business logic within the incoming notifications:
+let's explore other way to optimize this component by moving the state inside `Counter` and handle the business logic within the incoming notifications:
 
 ```javascript
 export function Counter() {
