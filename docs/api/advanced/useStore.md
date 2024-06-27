@@ -51,7 +51,7 @@ export default function reducer(state, action) {
 
 ## Store
 
-`hermes-io` provides a `Store` class meant to hold, `mutate` and `query` information, combined with the [context](/docs/api/basic/Context) and [observer](/docs/api/basic/Observer) pattern to ensure reactivity on data changes alongside with the `useStore` hook.
+The `Store` class is designed to: `store`, `mutate` and `query` information, combined with the [context](/docs/api/basic/Context) and [observer](/docs/api/basic/Observer) pattern to ensure reactivity on data changes alongside with the `useStore` hook.
 
 ### Parameter
 
@@ -68,7 +68,9 @@ export const explorer = new Store({ context, observer });
 
 ### useStore vs useObserver
 
-`useObserver` is a communication mecanishm to send information from one place to another whatever you do with that information whether it's a http request or trigger a re-render or any other bussiness logic is up to you, in the other hand `useStore` is meant to orchestrate partially or globally the data of you application and syncronize the store with the state of you app, you can have a store for the entire app (global store) or for a specific section of you app (contained store).
+`useObserver` is a communication mecanishm to send information from one place to another whatever you do with that whether it's a http request or trigger a re-render or any other bussiness logic is up to you. 
+
+In the other hand `useStore` is designed to orchestrate partially or globally the data of you application, you can have a store for the entire app (global store) or for a specific section of you app (micro store).
 
 :::tip
 Pro tip: Move the re-renders to closest to where is explicitly required that way you app will be better optimized you can use an architecture oriented to fine grained updates as an alternative to `memo` check the demo: [file explorer](https://stackblitz.com/edit/vitejs-vite-juuupt?file=README.md) 
