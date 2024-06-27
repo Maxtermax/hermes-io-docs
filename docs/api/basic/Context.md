@@ -3,10 +3,9 @@ sidebar_position: 3
 ---
 
 # Context
-`hermes-io` provides a `Context` class meant to create `notification context` instances, that means that only notifications submited on a specific context will be listened otherwise will be ignored, you can think on this like a `whitelist`. 
+The `Context` class designed to create `notification context` instances, only notifications submited on a specific context will be listened otherwise it will be ignored, you can think on this like a `whitelist`. 
 
 ```javascript
-// ./src/contexts/counter.js
 import { Context } from "hermes-io";
 export const CounterContext = new Context('CounterContext');
 ```
