@@ -9,7 +9,7 @@ import { Observer } from "hermes-io";
 export const CounterObserver = new Observer();
 
 ```
-The `CounterObserver` is designed to manage the `increment` and `decrement` here is am example to illustrate [counter application demo](https://stackblitz.com/edit/hermes-counter?file=README.md)
+The `CounterObserver` is designed to manage the `increment` and `decrement`, here is an example to illustrate: [counter application demo](https://stackblitz.com/edit/hermes-counter?file=README.md)
 
 ### generate observer (optional)
 To simply things you can generate the observer by using [hermes-io-cli](https://www.npmjs.com/package/hermes-io-cli#observer)
