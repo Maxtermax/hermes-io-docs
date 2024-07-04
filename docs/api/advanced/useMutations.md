@@ -40,6 +40,33 @@ const Folder = ({ id }) => {
 }
 ```
 
+To make it more practical, you can listen to event changes by implement `onEvent`and update the state, base on the business logic.
+
+| Name     | Description                                                | 
+|----------|------------------------------------------------------------|
+| onEvent  | Callback called on store mutations, same api as `onChange` |
+
+
+```javascript
+import { useMutations } from "hermes-io";
+import store from "store/app";
+import { CONSTANTS } from "constants";
+
+const Folder = ({ id }) => {
+  const { state, onEvent } = useMutations({
+    initialState: { isExpanded: false },
+    store,
+    id,
+  });
+
+  onEvent(CONSTANTS.SET_FOLDER_STATE, (value) => ({ isExpanded: value });
+
+  return <FolderIcon isExpanded={state.isExpanded} />
+}
+```
+
+
+
 :::tip
 Pro tip: You can have a two way communication bridge by invoking resolver argument inside the ` onChange` callback.
 
